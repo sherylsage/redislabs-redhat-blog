@@ -11,11 +11,11 @@ Fortunately, Redis Labs recently introduced active-active with Conflict-Free Rep
   - Getting started with a Redis Active-Active environment on OpenShift
   - Drag and drop images (requires your Dropbox account be linked)
 
-### What is an active-active architecture?
+## What is an active-active architecture?
 
 When enterprises deploy applications across multiple data centers (or cloud regions), one approach is to build an active-active architecture. Active-active is a multi-master setup where every database replica is a master, and can handle write operations. This allows you to service a global set of users while processing locally, handle regional outages, and utilize platform resources better with parallel application processing.
 
-### Why you need an active-active database?
+## Why you need an active-active database?
 
 In the digital age, you may be shopping on your phone in Munich while taking a train to Austria, and the expectation is that your application is always-on and the session store data is continuously available for the entire trip. Furthermore, modern applications such as e-commerce, mobile, gaming, social, IoT, fraud mitigation and social personalization also need response times of less than 100-milliseconds, while operating at sub-millisecond latency at scale. These modern applications frequently have multiple databases, located in-region. For example, a gaming or voting applications uses a distributed leaderboard where votes are stored locally, but eventually the replicas are synchronized and you have the same count everywhere. Another common example is multi-region data ingest applications.  When you are ingesting data in different regions, you can collect the data with multiple masters at each location. You ingest the data and eventually, all the data is merged. Finally, Redis Enterprise is frequently to distribute your cache in several data centers and with active-active the cache is eventually synchronize in real time.  
 
