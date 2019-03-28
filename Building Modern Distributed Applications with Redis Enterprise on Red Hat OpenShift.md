@@ -3,7 +3,7 @@ Sheryl Sage, Director Partner Marketing at Redis Labs
 #
 We live in a connected world and expect that our services are always-on and instantly delivered. The Red Hat OpenShift Container Platform helps you easily build and deploy applications in nearly any public, private or multi-cloud environment. But what about building geographically distributed applications? Operating geo-distributed applications that are both accurate and efficiently distributed is extremely challenging. 
 
-Fortunately, Redis Labs offers active-active with Conflict-Free Replicated Data Types (CRDTs) for distributed applications using Redis Enterprise on OpenShift. To provide some clarity on the topic, this post will cover why you need an active-active architecture, common consistency models, capabilities offered by Redis Enterprise, and how you can start building a Redis active-active environment on OpenShift.
+Fortunately, Redis Labs offers active-active with Conflict-Free Replicated Data Types (CRDTs) for distributed applications using [Redis Enterprise on OpenShift](https://redislabs.com/partner/redhat/). To provide some clarity on the topic, this post will cover why you need an active-active architecture, common consistency models, capabilities offered by Redis Enterprise, and how you can start building a Redis active-active environment on OpenShift.
 
 ## What is a multi-region active-active architecture?
 
