@@ -37,7 +37,7 @@ Redis Enterprise has implemented strong eventual consistency in an [active-activ
 
 * Even if the majority of the geo-replicated regions are down, the multi-master cluster will continue to handle read and write operations.
 
-The most common CRDT compatible use cases are counters, activity trackers, session stores, distributed caching, inventory management, and to understand how CRDTs work at a deeper level, you may want to read more about [Redis Enterprise CRDTs](https://redislabs.com/docs/under-the-hood/) and their conflict resolution semantics.  
+The most common CRDT compatible use cases are counters, activity trackers, session stores, distributed caching, inventory management. To understand how CRDTs work at a deeper level, you may enjoy reading more about [Redis Enterprise CRDTs](https://redislabs.com/docs/under-the-hood/) and their conflict resolution semantics.  
 
 ## How to use Redis Enterprise Active-Active on OpenShift
 Redis Labs has partnered with Red Hat to integrate Redis Enterprise Active-Active on OpenShift, using a [Redis Enterprise Operator](https://blog.openshift.com/using-the-redis-enterprise-operator-on-openshift/) and OpenShift Route. The enhanced Redis Enterprise Operator uses the routes mechanism to expose two inter-cluster services: the Redis Enterprise Cluster API service and the DB service. Both services are used during the creation and management of an active-active CRDT deployment. 
